@@ -1,4 +1,5 @@
-﻿Public Class Level_1
+﻿
+Public Class Level_1
 
     Dim Velocity As Integer = 15
     Dim Gravity As Integer = 10
@@ -16,7 +17,7 @@
         tmrFlags.Start()
 
         AxWindowsMediaPlayer1.Hide()
-        AxWindowsMediaPlayer1.URL = "D:\FinalVB\ART of WAR\ART of WAR\Resources\04_MKAlieZ.wav"
+        AxWindowsMediaPlayer1.URL = "C:\Users\jp134125\Desktop\Visual Basic\FinalVB-1\ART of WAR\ART of WAR\Resources\The Prisoner.wav"
         AxWindowsMediaPlayer1.Ctlcontrols.play()
     End Sub
 
@@ -62,10 +63,10 @@
             End If
         Next
 
-        Dim flags() = {Flag0, Flag1, Flag2, Flag3}
+        Dim flags() = {Flag0, Flag1, Flag2, Flag3, Flag4, Flag5, Flag6}
         Dim x As Integer
 
-        For x = 0 To 3
+        For x = 0 To 6
             If picPlayer.Bounds.IntersectsWith(flags(x).Bounds) Then
                 If flags(x).Enabled = True Then
                     Score += 1
@@ -77,12 +78,12 @@
         Next
 
         Goal.Hide()
-        If Score = 4 Then
+        If Score = 7 Then
             Goal.Show()
         End If
 
         If picPlayer.Bounds.IntersectsWith(Goal.Bounds) Then
-            If Score = 4 And Goal.Enabled = True Then
+            If Score = 7 And Goal.Enabled = True Then
                 tmrRight.Stop()
                 tmrLeft.Stop()
 
@@ -101,9 +102,18 @@
                 tmrLeft.Start()
             Case Keys.Up
                 tmrUp.Start()
-                
+
+                Select Case PlayerMAJ
+                    Case 1
+                        picPlayer.Image = My.Resources.CMJ1
+                        PlayerMAJ += 1
+                    Case 1
+                        picPlayer.Image = My.Resources.CMJ2
+                        PlayerMAJ = 1
+                End Select
+
                 Jumping = True
-                
+
         End Select
     End Sub
 
@@ -207,16 +217,9 @@
     Private Sub tmrUp_Tick(sender As Object, e As EventArgs) Handles tmrUp.Tick
         picPlayer.Top -= 20         ' Moves picPlayer to Up of set 20.
 
-        Select Case PlayerMAJ
-            Case 1
-                picPlayer.Image = My.Resources.CMJ1
-                PlayerMAJ += 1
-            Case 1
-                picPlayer.Image = My.Resources.CMJ2
-                PlayerMAJ = 1
-        End Select
 
-        
+
+
 
     End Sub
 
@@ -228,14 +231,14 @@
     End Sub
 
     Private Sub tmrCMA_Tick(sender As Object, e As EventArgs) Handles tmrCMA.Tick
-       
+
     End Sub
 
     Private Sub tmrFlags_Tick(sender As Object, e As EventArgs)
-        Dim flags() = {Flag0, Flag1, Flag2, Flag3}
+        Dim flags() = {Flag0, Flag1, Flag2, Flag3, Flag4, Flag5, Flag6}
         Dim y As Integer
 
-        For y = 0 To 3
+        For y = 0 To 6
             Select Case FlagWaving
                 Case 1
                     flags(y).Image = My.Resources.RedFlag1
@@ -249,5 +252,4 @@
             End Select
         Next
     End Sub
-
 End Class
