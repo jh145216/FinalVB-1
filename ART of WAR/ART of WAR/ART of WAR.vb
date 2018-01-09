@@ -2,17 +2,26 @@
     Dim second As Integer
 
     Private Sub ArtofWarMenu_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Timer1.Interval = 5000
-        Timer1.Start() 'Timer starts functioning
+        tmrLogo.Interval = 5000
+        tmrLogo.Start() 'Timer starts functioning
+
+
+        'If picLogo.Visible And picBackGround.Visible = False Then
+        WindowsMediaPlayer.Hide()
+        WindowsMediaPlayer.URL = "C:\Users\jp134125\Desktop\Visual Basic\FinalVB-1\ART of WAR\ART of WAR\Resources\The Prisoner.wav"
+        WindowsMediaPlayer.Ctlcontrols.play()
+        'WindowsMediaPlayer.settings.volume = WindowsMediaPlayer.settings.volume = 35
+        'End If
     End Sub
 
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+    Private Sub tmrLogo_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrLogo.Tick
         picLogo.Visible = False
-        picMBackGround.Visible = False
+        picBackGround.Visible = False
+
 
         second = second + 1
         If second >= 10 Then
-            Timer1.Stop() 'Timer stops functioning
+            tmrLogo.Stop() 'Timer stops functioning
         End If
     End Sub
 

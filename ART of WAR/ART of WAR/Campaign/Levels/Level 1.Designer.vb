@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Level_1
+Partial Class Level1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,7 +23,7 @@ Partial Class Level_1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Level_1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Level1))
         Me.tmrRight = New System.Windows.Forms.Timer(Me.components)
         Me.tmrLeft = New System.Windows.Forms.Timer(Me.components)
         Me.tmrUp = New System.Windows.Forms.Timer(Me.components)
@@ -58,6 +58,7 @@ Partial Class Level_1
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.Flag5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         CType(Me.Goal, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Flag3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Flag4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -392,7 +393,7 @@ Partial Class Level_1
         Me.PictureBox17.TabStop = False
         Me.PictureBox17.Tag = "platform"
         '
-        'Level_1
+        'Level1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -426,7 +427,7 @@ Partial Class Level_1
         Me.Controls.Add(Me.picPlayer)
         Me.Controls.Add(Me.Goal)
         Me.Controls.Add(Me.picAir)
-        Me.Name = "Level_1"
+        Me.Name = "Level1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Level_1"
         CType(Me.Goal, System.ComponentModel.ISupportInitialize).EndInit()
@@ -493,4 +494,5 @@ Partial Class Level_1
     Friend WithEvents PictureBox15 As System.Windows.Forms.PictureBox
     Friend WithEvents Flag5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox17 As System.Windows.Forms.PictureBox
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class
