@@ -1,5 +1,5 @@
 ﻿
-Public Class Level_1
+Public Class Level1
 
     Dim Velocity As Integer = 15
     Dim Gravity As Integer = 10
@@ -84,9 +84,11 @@ Public Class Level_1
 
         If picPlayer.Bounds.IntersectsWith(Goal.Bounds) Then
             If Score = 7 And Goal.Enabled = True Then
-                tmrRight.Stop()
-                tmrLeft.Stop()
 
+
+
+                Level2.Show()
+                Me.Close()
             End If
         End If
 
@@ -226,7 +228,6 @@ Public Class Level_1
     ' A timer that move picPlayer down
     Private Sub tmrGravity_Tick(sender As Object, e As EventArgs) Handles tmrGravity.Tick
         picPlayer.Top += Gravity          ' Moves picPlayer to down of set variable of Gravity.
-
 
     End Sub
 
