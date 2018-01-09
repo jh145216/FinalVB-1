@@ -6,6 +6,6 @@ We used Visual Studio 2013 to make our game.
 
 Jimmy Phillip Pham Ho and Joey Huff made ART of WAR.
 
-Our Flow Chart - https://www.draw.io/?  state=%7B%22ids%22:%5B%2216ViTqfv8J_RTgkZA8wdc_pcs7GFGGU9H%22%5D,%22action%22:%22open%22,%22userId%22:%22104529330167439667287%22%7D#G16ViTqfv8J_RTgkZA8wdc_pcs7GFGGU9H
+Our Flow Chart - <img src="MakerCorp">
 
-Our Youtube Video - 
+Our Youtube Video - https://www.youtube.com/watch?v=SjJdZhmVKcM
