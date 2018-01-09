@@ -8,4 +8,4 @@ Jimmy Phillip Pham Ho and Joey Huff made ART of WAR.
 
 Our Flow Chart - <img src="MakerCorp">
 
-Our Youtube Video - https://www.youtube.com/watch?v=SjJdZhmVKcM
+Our Youtube Video - 
