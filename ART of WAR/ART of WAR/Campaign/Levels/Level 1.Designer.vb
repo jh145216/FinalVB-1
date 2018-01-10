@@ -29,7 +29,6 @@ Partial Class Level1
         Me.tmrUp = New System.Windows.Forms.Timer(Me.components)
         Me.tmrGame = New System.Windows.Forms.Timer(Me.components)
         Me.tmrGravity = New System.Windows.Forms.Timer(Me.components)
-        Me.tmrCMA = New System.Windows.Forms.Timer(Me.components)
         Me.tmrFlags = New System.Windows.Forms.Timer(Me.components)
         Me.Goal = New System.Windows.Forms.PictureBox()
         Me.Flag3 = New System.Windows.Forms.PictureBox()
@@ -58,7 +57,6 @@ Partial Class Level1
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.Flag5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         CType(Me.Goal, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Flag3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Flag4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -107,9 +105,6 @@ Partial Class Level1
         'tmrGravity
         '
         Me.tmrGravity.Interval = 20
-        '
-        'tmrCMA
-        '
         '
         'Goal
         '
@@ -427,6 +422,7 @@ Partial Class Level1
         Me.Controls.Add(Me.picPlayer)
         Me.Controls.Add(Me.Goal)
         Me.Controls.Add(Me.picAir)
+        Me.DoubleBuffered = True
         Me.Name = "Level1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Level_1"
@@ -471,7 +467,6 @@ Partial Class Level1
     Friend WithEvents PictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents picPlayer As System.Windows.Forms.PictureBox
-    Friend WithEvents tmrCMA As System.Windows.Forms.Timer
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents Flag0 As System.Windows.Forms.PictureBox
     Friend WithEvents Flag4 As System.Windows.Forms.PictureBox
@@ -494,5 +489,4 @@ Partial Class Level1
     Friend WithEvents PictureBox15 As System.Windows.Forms.PictureBox
     Friend WithEvents Flag5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox17 As System.Windows.Forms.PictureBox
-    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class

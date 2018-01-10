@@ -5,7 +5,6 @@ Public Class Level1
     Dim Gravity As Integer = 10
     Dim Jumping As Boolean
     Dim PlayerMAR As Integer = 1
-    Dim PlayerMAJ As Integer = 1
     Dim Score As Integer
     Dim FlagWaving As Integer = 1
 
@@ -16,8 +15,8 @@ Public Class Level1
         tmrGame.Start()
         tmrFlags.Start()
 
+
         AxWindowsMediaPlayer1.Hide()
-        AxWindowsMediaPlayer1.URL = "C:\Users\jp134125\Desktop\Visual Basic\FinalVB-1\ART of WAR\ART of WAR\Resources\The Prisoner.wav"
         AxWindowsMediaPlayer1.Ctlcontrols.play()
     End Sub
 
@@ -84,9 +83,6 @@ Public Class Level1
 
         If picPlayer.Bounds.IntersectsWith(Goal.Bounds) Then
             If Score = 7 And Goal.Enabled = True Then
-
-
-
                 Level2.Show()
                 Me.Close()
             End If
@@ -97,6 +93,9 @@ Public Class Level1
     ' When any key is down perform funtions below.
     Private Sub Level_1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         Select Case e.KeyCode
+            Case Keys.Escape
+                ArtofWarMenu.Show()
+                Me.Close()
             Case Keys.Right
                 tmrRight.Start()
                 'tmrCMA.Start()
@@ -104,15 +103,6 @@ Public Class Level1
                 tmrLeft.Start()
             Case Keys.Up
                 tmrUp.Start()
-
-                Select Case PlayerMAJ
-                    Case 1
-                        picPlayer.Image = My.Resources.CMJ1
-                        PlayerMAJ += 1
-                    Case 1
-                        picPlayer.Image = My.Resources.CMJ2
-                        PlayerMAJ = 1
-                End Select
 
                 Jumping = True
 
@@ -218,21 +208,11 @@ Public Class Level1
     ' A timer that moves picPlayer to the up.
     Private Sub tmrUp_Tick(sender As Object, e As EventArgs) Handles tmrUp.Tick
         picPlayer.Top -= 20         ' Moves picPlayer to Up of set 20.
-
-
-
-
-
     End Sub
 
     ' A timer that move picPlayer down
     Private Sub tmrGravity_Tick(sender As Object, e As EventArgs) Handles tmrGravity.Tick
         picPlayer.Top += Gravity          ' Moves picPlayer to down of set variable of Gravity.
-
-    End Sub
-
-    Private Sub tmrCMA_Tick(sender As Object, e As EventArgs) Handles tmrCMA.Tick
-
     End Sub
 
     Private Sub tmrFlags_Tick(sender As Object, e As EventArgs)
