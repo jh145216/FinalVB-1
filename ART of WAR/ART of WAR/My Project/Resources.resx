@@ -199,12 +199,6 @@
   <data name="Flagcaptured" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flag_captured.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="flag_captured" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flag_captured.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="flag_captured1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flag_captured.wma;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Pelican" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pelican.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -223,7 +217,94 @@
   <data name="RedFlag3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Red Flag 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_04_MKAlieZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\04_MKAlieZ.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Artwork_of_mechs_soldiers_fighting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Artwork_of_mechs_soldiers_fighting.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BattleScene_1880w" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BattleScene_1880w.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c29118e3c2983ca793e36b26daef9a6d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\c29118e3c2983ca793e36b26daef9a6d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Company_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Company Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dead_Eyes_See_No_Future_by_ukitakumuki_600x849" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dead_Eyes_See_No_Future_by_ukitakumuki-600x849.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="front_mission__satellite_rain_by_ukitakumuki_d33fwtn_600x424" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\front_mission__satellite_rain_by_ukitakumuki-d33fwtn-600x424.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="halo_wars_2_dlc_delayed_to_fix_game_breaking_bug_jgwh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\halo-wars-2-dlc-delayed-to-fix-game-breaking-bug_jgwh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1395347457_TOTAL_WAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1395347457_TOTAL WAR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_56847_Sci_Fi_Sci_Fi___Battle_Wallpaper_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\56847_Sci-Fi_Sci_Fi_-_Battle_Wallpaper-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnemieMA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnemieMA1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnemieMA2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnemieMA3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnemieMA3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnemieMA4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnemieMA4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnemieMA5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnemieMAR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnemieMAR1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnemieMAR2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnemieMAR2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnemieMAR3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnemieMAR4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnemieMAR4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnemieMAR5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnemieRV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnemieRV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Harvest_Marines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Harvest_Marines.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NattCl2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NattCl2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="platform2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\platform 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scorpion_Tank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scorpion Tank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarHog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WarHog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_41023_8_bit_748x421" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\41023-8-bit-748x421.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="desertbackground_by_planetcentauri_d769yxa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\desertbackground_by_planetcentauri-d769yxa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="platform_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\platform 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_Prisoner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The_Prisoner.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

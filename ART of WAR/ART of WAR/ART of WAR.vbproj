@@ -89,6 +89,30 @@
     <Compile Include="Campaign\Levels\Level 1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Campaign\Levels\Level 2.Designer.vb">
+      <DependentUpon>Level 2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Campaign\Levels\Level 2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campaign\Levels\Level 3.Designer.vb">
+      <DependentUpon>Level 3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Campaign\Levels\Level 3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campaign\Levels\Level Selector.Designer.vb">
+      <DependentUpon>Level Selector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Campaign\Levels\Level Selector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credits.Designer.vb">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Credits.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -114,6 +138,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Campaign\Levels\Level 1.resx">
       <DependentUpon>Level 1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campaign\Levels\Level 2.resx">
+      <DependentUpon>Level 2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campaign\Levels\Level 3.resx">
+      <DependentUpon>Level 3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campaign\Levels\Level Selector.resx">
+      <DependentUpon>Level Selector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -231,9 +267,6 @@
     <None Include="Resources\PlayerRV.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\background.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\platforms.png" />
   </ItemGroup>
   <ItemGroup>
@@ -252,15 +285,7 @@
     <None Include="Resources\flag_captured.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\flag_captured.wma" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\flag_captured.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\04_MKAlieZ.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxWMPLib">
@@ -280,6 +305,114 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\56847_Sci-Fi_Sci_Fi_-_Battle_Wallpaper-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1395347457_TOTAL WAR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Artwork_of_mechs_soldiers_fighting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BattleScene_1880w.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c29118e3c2983ca793e36b26daef9a6d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dead_Eyes_See_No_Future_by_ukitakumuki-600x849.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\front_mission__satellite_rain_by_ukitakumuki-d33fwtn-600x424.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halo-wars-2-dlc-delayed-to-fix-game-breaking-bug_jgwh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41023-8-bit-748x421.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NattCl2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Harvest_Marines.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platform 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemieMAR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemieMAR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemieMAR4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemieMAR5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemieRV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scorpion Tank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarHog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemieMA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemieMA3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemieMA4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnemieMA5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desertbackground_by_planetcentauri-d769yxa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platform 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Halo 2 Anniversary OST - This Glittering Band.m4a">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Halo 2 Soundtrack - Epilogue.m4a">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Halo 3 ODST - Difference for Darkness %28Soundtrack HD%29.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\The_Prisoner.wav" />
+    <Content Include="The Prisoner.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="We%27re The Desperate Measures [ODST Theme].mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

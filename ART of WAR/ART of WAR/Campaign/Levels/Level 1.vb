@@ -1,10 +1,10 @@
-﻿Public Class Level_1
+﻿
+Public Class Level1
 
     Dim Velocity As Integer = 15
     Dim Gravity As Integer = 10
     Dim Jumping As Boolean
     Dim PlayerMAR As Integer = 1
-    Dim PlayerMAJ As Integer = 1
     Dim Score As Integer
     Dim FlagWaving As Integer = 1
 
@@ -15,8 +15,8 @@
         tmrGame.Start()
         tmrFlags.Start()
 
+
         AxWindowsMediaPlayer1.Hide()
-        AxWindowsMediaPlayer1.URL = "D:\FinalVB\ART of WAR\ART of WAR\Resources\04_MKAlieZ.wav"
         AxWindowsMediaPlayer1.Ctlcontrols.play()
     End Sub
 
@@ -62,10 +62,10 @@
             End If
         Next
 
-        Dim flags() = {Flag0, Flag1, Flag2, Flag3}
+        Dim flags() = {Flag0, Flag1, Flag2, Flag3, Flag4, Flag5, Flag6}
         Dim x As Integer
 
-        For x = 0 To 3
+        For x = 0 To 6
             If picPlayer.Bounds.IntersectsWith(flags(x).Bounds) Then
                 If flags(x).Enabled = True Then
                     Score += 1
@@ -77,15 +77,14 @@
         Next
 
         Goal.Hide()
-        If Score = 4 Then
+        If Score = 7 Then
             Goal.Show()
         End If
 
         If picPlayer.Bounds.IntersectsWith(Goal.Bounds) Then
-            If Score = 4 And Goal.Enabled = True Then
-                tmrRight.Stop()
-                tmrLeft.Stop()
-
+            If Score = 7 And Goal.Enabled = True Then
+                Level2.Show()
+                Me.Close()
             End If
         End If
 
@@ -94,6 +93,9 @@
     ' When any key is down perform funtions below.
     Private Sub Level_1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         Select Case e.KeyCode
+            Case Keys.Escape
+                ArtofWarMenu.Show()
+                Me.Close()
             Case Keys.Right
                 tmrRight.Start()
                 'tmrCMA.Start()
@@ -101,9 +103,9 @@
                 tmrLeft.Start()
             Case Keys.Up
                 tmrUp.Start()
-                
+
                 Jumping = True
-                
+
         End Select
     End Sub
 
@@ -206,36 +208,18 @@
     ' A timer that moves picPlayer to the up.
     Private Sub tmrUp_Tick(sender As Object, e As EventArgs) Handles tmrUp.Tick
         picPlayer.Top -= 20         ' Moves picPlayer to Up of set 20.
-
-        Select Case PlayerMAJ
-            Case 1
-                picPlayer.Image = My.Resources.CMJ1
-                PlayerMAJ += 1
-            Case 1
-                picPlayer.Image = My.Resources.CMJ2
-                PlayerMAJ = 1
-        End Select
-
-        
-
     End Sub
 
     ' A timer that move picPlayer down
     Private Sub tmrGravity_Tick(sender As Object, e As EventArgs) Handles tmrGravity.Tick
         picPlayer.Top += Gravity          ' Moves picPlayer to down of set variable of Gravity.
-
-
-    End Sub
-
-    Private Sub tmrCMA_Tick(sender As Object, e As EventArgs) Handles tmrCMA.Tick
-       
     End Sub
 
     Private Sub tmrFlags_Tick(sender As Object, e As EventArgs)
-        Dim flags() = {Flag0, Flag1, Flag2, Flag3}
+        Dim flags() = {Flag0, Flag1, Flag2, Flag3, Flag4, Flag5, Flag6}
         Dim y As Integer
 
-        For y = 0 To 3
+        For y = 0 To 6
             Select Case FlagWaving
                 Case 1
                     flags(y).Image = My.Resources.RedFlag1
@@ -249,5 +233,4 @@
             End Select
         Next
     End Sub
-
 End Class
