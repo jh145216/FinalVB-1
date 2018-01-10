@@ -148,6 +148,9 @@
     <EmbeddedResource Include="Campaign\Levels\Level Selector.resx">
       <DependentUpon>Level Selector.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
@@ -282,15 +285,7 @@
     <None Include="Resources\flag_captured.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\flag_captured.wma" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\flag_captured.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\04_MKAlieZ.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxWMPLib">
@@ -310,9 +305,6 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\The Prisoner.wav" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\56847_Sci-Fi_Sci_Fi_-_Battle_Wallpaper-1.jpg" />
@@ -397,6 +389,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\EnemieMA5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desertbackground_by_planetcentauri-d769yxa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platform 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Halo 2 Anniversary OST - This Glittering Band.m4a">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Halo 2 Soundtrack - Epilogue.m4a">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Halo 3 ODST - Difference for Darkness %28Soundtrack HD%29.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\The_Prisoner.wav" />
+    <Content Include="The Prisoner.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="We%27re The Desperate Measures [ODST Theme].mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

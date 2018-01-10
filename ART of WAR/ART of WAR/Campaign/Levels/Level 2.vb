@@ -8,22 +8,16 @@ Public Class Level2
 
     ' Player Animation
     Dim PlayerMAR As Integer = 1
-    Dim PlayerMAJ As Integer = 1
     Dim FlagWaving As Integer = 1
 
-    ' Enemie AI
-    Dim GruntRight As Integer = 1
-    Dim GruntLeft As Integer = 1
 
 
     Private Sub Level_1_Load(sender As Object, e As EventArgs) Handles Me.Load
         tmrGame.Start()
         tmrFlags.Start()
-        tmrGruntRight.Start()
-        tmrGruntLeft.Start()
+
 
         AxWindowsMediaPlayer1.Hide()
-        AxWindowsMediaPlayer1.URL = "C:\Users\jp134125\Desktop\Visual Basic\FinalVB-1\ART of WAR\ART of WAR\Resources\The Prisoner.wav"
         AxWindowsMediaPlayer1.Ctlcontrols.play()
     End Sub
 
@@ -70,26 +64,6 @@ Public Class Level2
         Next
 
 
-
-        Dim Grunts() = {picGrunt0, picGrunt1, picGrunt2, picGrunt3}
-        Dim z As Integer
-
-        For Each AIBounds As Control In Me.Controls
-            If TypeOf AIBounds Is PictureBox Then
-                For z = 0 To 3
-                    If Grunts(z).Bounds.IntersectsWith(AIBounds.Tag = "BoundRights") Then
-                        tmrGruntRight.Stop()
-                        tmrGruntLeft.Start()
-                    End If
-                    If Grunts(z).Bounds.IntersectsWith(AIBounds.Tag = "BoundRights") Then
-                        tmrGruntLeft.Stop()
-                        tmrGruntRight.Start()
-                    End If
-                Next
-            End If
-        Next
-
-
         Dim flags() = {Flag0, Flag1, Flag2, Flag3, Flag4, Flag5, Flag6, Flag7}
         Dim x As Integer
 
@@ -111,9 +85,8 @@ Public Class Level2
 
         If picPlayer.Bounds.IntersectsWith(picGoal.Bounds) Then
             If Score = 8 And picGoal.Enabled = True Then
-                tmrRight.Stop()
-                tmrLeft.Stop()
-
+                Level3.Show()
+                Me.Close()
             End If
         End If
 
@@ -132,17 +105,7 @@ Public Class Level2
             Case Keys.Up
                 tmrUp.Start()
 
-                Select Case PlayerMAJ
-                    Case 1
-                        picPlayer.Image = My.Resources.CMJ1
-                        PlayerMAJ += 1
-                    Case 1
-                        picPlayer.Image = My.Resources.CMJ2
-                        PlayerMAJ = 1
-                End Select
-
                 Jumping = True
-
 
         End Select
     End Sub
@@ -247,10 +210,6 @@ Public Class Level2
     Private Sub tmrUp_Tick(sender As Object, e As EventArgs) Handles tmrUp.Tick
         picPlayer.Top -= 20         ' Moves picPlayer to Up of set 20.
 
-
-
-
-
     End Sub
 
     ' A timer that move picPlayer down
@@ -259,9 +218,6 @@ Public Class Level2
 
     End Sub
 
-    Private Sub tmrCMA_Tick(sender As Object, e As EventArgs) Handles tmrCMA.Tick
-
-    End Sub
 
     Private Sub tmrFlags_Tick(sender As Object, e As EventArgs)
         Dim flags() = {Flag0, Flag1, Flag2, Flag3, Flag4, Flag5, Flag6}
@@ -282,56 +238,5 @@ Public Class Level2
         Next
 
     End Sub
-
-    Private Sub tmrGruntRight_Tick(sender As Object, e As EventArgs)
-        Dim Grunts() = {picGrunt0, picGrunt1, picGrunt2, picGrunt3}
-        Dim a As Integer
-
-        For a = 0 To 3
-        Select Case GruntRight
-                Case 1
-                    Grunts(a).Image = My.Resources.EnemieMA1
-                    GruntRight += 1
-                Case 2
-                    Grunts(a).Image = My.Resources.EnemieMA2
-                    GruntRight += 1
-                Case 3
-                    Grunts(a).Image = My.Resources.EnemieMA3
-                    GruntRight += 1
-                Case 4
-                    Grunts(a).Image = My.Resources.EnemieMA4
-                    GruntRight = 1
-            End Select
-            Grunts(a).Left += 5
-        Next
-    End Sub
-
-    Private Sub tmrGruntLeft_Tick(sender As Object, e As EventArgs)
-        Dim Grunts() = {picGrunt0, picGrunt1, picGrunt2, picGrunt3}
-        Dim b As Integer
-
-        For b = 0 To 3
-            Select Case GruntLeft
-                Case 1
-                    Grunts(b).Image = My.Resources.EnemieRV
-                    GruntLeft += 1
-                Case 2
-                    Grunts(b).Image = My.Resources.EnemieMAR1
-                    GruntLeft += 1
-                Case 3
-                    Grunts(b).Image = My.Resources.EnemieMAR2
-                    GruntLeft += 1
-                Case 4
-                    Grunts(b).Image = My.Resources.EnemieMAR3
-                    GruntLeft += 1
-                Case 4
-                    Grunts(b).Image = My.Resources.EnemieMAR4
-                    GruntLeft = 1
-            End Select
-            Grunts(b).Left -= 5
-        Next
-    End Sub
-
-
 
 End Class

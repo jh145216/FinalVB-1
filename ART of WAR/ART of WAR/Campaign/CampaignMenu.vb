@@ -9,4 +9,8 @@
         Level1.Show()
         Me.Close()
     End Sub
+
+    Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
+        ArtofWarMenu.Close()
+    End Sub
 End Class

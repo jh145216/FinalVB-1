@@ -33,14 +33,12 @@ Partial Class ArtofWarMenu
         Me.btnSettings = New System.Windows.Forms.Button()
         Me.btnSoldier = New System.Windows.Forms.Button()
         Me.btnCredits = New System.Windows.Forms.Button()
-        Me.WindowsMediaPlayer = New AxWMPLib.AxWindowsMediaPlayer()
-        Me.tmrBackgroundMusic = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.picLogo = New System.Windows.Forms.PictureBox()
         Me.picBackGround = New System.Windows.Forms.PictureBox()
-        CType(Me.WindowsMediaPlayer, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.AxWindowsMediaPlayer1 = New AxWMPLib.AxWindowsMediaPlayer()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBackGround, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnCampaign
@@ -90,7 +88,9 @@ Partial Class ArtofWarMenu
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
+        Me.lblTitle.BackColor = System.Drawing.Color.Transparent
         Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.ForeColor = System.Drawing.Color.Snow
         Me.lblTitle.Location = New System.Drawing.Point(174, 27)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(232, 54)
@@ -133,15 +133,6 @@ Partial Class ArtofWarMenu
         Me.btnCredits.Text = "Credits"
         Me.btnCredits.UseVisualStyleBackColor = False
         '
-        'WindowsMediaPlayer
-        '
-        Me.WindowsMediaPlayer.Enabled = True
-        Me.WindowsMediaPlayer.Location = New System.Drawing.Point(-1, -1)
-        Me.WindowsMediaPlayer.Name = "WindowsMediaPlayer"
-        Me.WindowsMediaPlayer.OcxState = CType(resources.GetObject("WindowsMediaPlayer.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.WindowsMediaPlayer.Size = New System.Drawing.Size(133, 34)
-        Me.WindowsMediaPlayer.TabIndex = 26
-        '
         'picLogo
         '
         Me.picLogo.BackColor = System.Drawing.Color.Black
@@ -163,13 +154,25 @@ Partial Class ArtofWarMenu
         Me.picBackGround.TabIndex = 29
         Me.picBackGround.TabStop = False
         '
+        'AxWindowsMediaPlayer1
+        '
+        Me.AxWindowsMediaPlayer1.Enabled = True
+        Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(12, 12)
+        Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
+        Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(133, 54)
+        Me.AxWindowsMediaPlayer1.TabIndex = 30
+        '
         'ArtofWarMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BackgroundImage = Global.ART_of_WAR.My.Resources.Resources.halo_wars_2_dlc_delayed_to_fix_game_breaking_bug_jgwh
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(589, 481)
-        Me.Controls.Add(Me.WindowsMediaPlayer)
+        Me.Controls.Add(Me.picLogo)
+        Me.Controls.Add(Me.picBackGround)
         Me.Controls.Add(Me.btnCredits)
         Me.Controls.Add(Me.btnSoldier)
         Me.Controls.Add(Me.btnSettings)
@@ -178,13 +181,13 @@ Partial Class ArtofWarMenu
         Me.Controls.Add(Me.btnMulitplayer)
         Me.Controls.Add(Me.btnSurvivleMode)
         Me.Controls.Add(Me.btnCampaign)
-        Me.Controls.Add(Me.picLogo)
-        Me.Controls.Add(Me.picBackGround)
+        Me.Controls.Add(Me.AxWindowsMediaPlayer1)
         Me.Name = "ArtofWarMenu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " "
-        CType(Me.WindowsMediaPlayer, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picBackGround, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -198,10 +201,8 @@ Partial Class ArtofWarMenu
     Friend WithEvents btnSettings As System.Windows.Forms.Button
     Friend WithEvents btnSoldier As System.Windows.Forms.Button
     Friend WithEvents btnCredits As System.Windows.Forms.Button
-    Friend WithEvents WindowsMediaPlayer As AxWMPLib.AxWindowsMediaPlayer
-    Friend WithEvents tmrBackgroundMusic As System.Windows.Forms.Timer
-    Friend WithEvents Timer2 As System.Windows.Forms.Timer
     Friend WithEvents picLogo As System.Windows.Forms.PictureBox
     Friend WithEvents picBackGround As System.Windows.Forms.PictureBox
+    Friend WithEvents AxWindowsMediaPlayer1 As AxWMPLib.AxWindowsMediaPlayer
 
 End Class

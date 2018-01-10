@@ -90,6 +90,7 @@ Partial Class CampaignMenu
         Me.Controls.Add(Me.btnSinglePlayer)
         Me.Controls.Add(Me.btnReturn)
         Me.Name = "CampaignMenu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Art of War"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -199,12 +199,6 @@
   <data name="Flagcaptured" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flag_captured.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="flag_captured" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flag_captured.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="flag_captured1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flag_captured.wma;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Pelican" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pelican.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -222,12 +216,6 @@
   </data>
   <data name="RedFlag3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Red Flag 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_04_MKAlieZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\04_MKAlieZ.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="The_Prisoner" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\The Prisoner.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Artwork_of_mechs_soldiers_fighting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Artwork_of_mechs_soldiers_fighting.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -309,5 +297,14 @@
   </data>
   <data name="_41023_8_bit_748x421" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\41023-8-bit-748x421.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="desertbackground_by_planetcentauri_d769yxa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\desertbackground_by_planetcentauri-d769yxa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="platform_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\platform 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_Prisoner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The_Prisoner.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
